@@ -11,7 +11,9 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-
+"""
+    Slugify it
+"""
 def slugify(text: str) -> str:
     text = text.lower().strip()
     text = re.sub(r"[^a-z0-9]+", "-", text)
